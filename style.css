@@ -1,0 +1,276 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    outline: none;
+}
+
+body {
+    background-color: rgb(235, 235, 235);
+}
+
+.nav-container {
+    height: 10vh;
+    background-color: white;
+}
+
+nav {
+    margin: 0 auto;
+    width: 80%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav a {
+    margin-left: 20px;
+    color: #E70F53;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.main-up {
+    height: 82vh;
+    margin: 30px auto 0 auto;
+    width: 80%;
+    display: flex;
+}
+
+/* ---------- MAIN LEFT SIDE ---------- */
+.main-left-side {
+    flex: 1.5;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-right: 3px;
+}
+
+.hero-container {
+    flex: 1;
+    background-color: white;
+    margin-bottom: 7.5px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.hero-container img {
+    width: 100px;
+    margin-left: 10px;
+}
+
+.hero-content {
+    margin-left: 30px;
+}
+
+.hero-content h3 {
+    color: #E70F53;
+}
+
+.hero-content p {
+    margin-top: 5px;
+}
+
+.sidebar-container {
+    flex: 2;
+    background-color: white;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sidebar-container img {
+    width: 100px;
+}
+
+.sidebar-container p {
+    margin: 5px 0;
+}
+
+.sidebar-container button {
+    margin-top: 10px;
+    background-color: #E70F53;
+    color: white;
+    border: 1px solid #E70F53;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: 0.3s ease-in;
+}
+
+.sidebar-container button:hover {
+    background-color: white;
+    color: #E70F53;
+}
+
+/* ----------------------------------- */
+
+/* ---------- MAIN RIGHT SIDE ---------- */
+.main-right-side {
+    flex: 2;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-left: 3px;
+}
+
+.maincontent-container {
+    flex: 2;
+    background-color: white;
+    margin-bottom: 7.5px;
+    padding: 10px;
+}
+
+.maincontent-container-content {
+    display: flex;
+    margin: 20px 10px 10px 10px;
+}
+
+.maincontent-container ul {
+    list-style: none;
+}
+
+.maincontent-container li {
+    margin: 10px 0;
+}
+
+.maincontent-container li span {
+    color: #E70F53;
+}
+
+.maincontent-container h3 {
+    margin: 10px;
+    color: #E70F53;
+}
+
+.maincontent-container img {
+    width: 20%;
+    margin-left: 30px;
+}
+
+.extracontent-container {
+    flex: 1;
+    background-color: white;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.extracontent-container-right {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.extracontent-container-left {
+    flex: 3;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+/* ----------------------------------- */
+
+.main-down {
+    display: flex;
+    width: 80%;
+    margin: 7px auto 30px auto;
+    height: 15vh;
+}
+
+/* ---------- MAIN DOWN LEFT ---------- */
+.main-down-left {
+    background-color: white;
+    flex: 2.5;
+    margin-right: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+/* ----------------------------------- */
+
+/* ---------- MAIN DOWN RIGHT ---------- */
+.main-down-right {
+    background-color: white;
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #E70F53;
+}
+
+/* ----------------------------------- */
+
+footer {
+    height: 20vh;
+    background-color: #444444;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-container {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    color: white;
+}
+
+.footer-logo {
+    font-size: 3em;
+}
+
+footer ul li {
+    margin: 7.5px 0;
+}
+
+@media screen and (max-width: 950px) {
+    .main-up {
+        flex-direction: column;
+        height: 100%;
+    }
+
+    .main-down{
+        flex-direction: column;
+    }
+
+    .main-left-side {
+        margin-right: 0px;
+    }
+
+    .main-right-side {
+        margin-left: 0px;
+        margin-top: 10px;
+    }
+
+    .main-down{
+       height: 100%;
+    }
+
+    .main-down-left{
+        flex-direction: column;
+        margin-right: 0px;
+    }
+
+    .main-down-right h3{
+        margin-bottom: 20px;
+    }
+
+    footer {
+        height: 100%;
+        padding: 20px 0;
+    }
+
+    .footer-container{
+        flex-direction: column;
+    }
+}
